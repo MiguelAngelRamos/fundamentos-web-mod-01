@@ -62,9 +62,42 @@ footer {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
 
 .site-content {
   flex: 1;
+}
+
+/* Estos son los estilos del formulario */
+#contact-form {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width:100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
