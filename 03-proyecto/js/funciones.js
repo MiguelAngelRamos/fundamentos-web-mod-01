@@ -21,4 +21,5 @@ function sumar(elemento1, elemento2) {
 }
 
 // invocar la funcion
-console.log(sumar(numero1, numero2));
+sumar(numero1, numero2) //* retorna el valor de 25
+console.log(sumar(numero1, numero2)); //* con console.log podemos imprimir por consola.

@@ -1,4 +1,4 @@
-let producto = "Teclado";
+let producto = "Mouse";
 // booleana "verdadero" o "falso"
 // true o false
 if(producto == "Mouse") {
