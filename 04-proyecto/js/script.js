@@ -6,15 +6,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // El boton
   addButton.addEventListener('click', function() {
-    console.log('has dado click en el boton!')
+    addTask(inputText.value);
+    input.value = '';
   });
 
   // En la caja de texto
   inputText.addEventListener('keypress', function(event) {
+    
     if(event.key == 'Enter') {
-      console.log('has presionado el enter')
+      console.log(inputText.value)
+      addTask(inputText.value);
+      input.value = '';
     }
-  })
+  });
+
+  function addTask(task) {
+    // construir un list item <li>
+    const li = document.createElement('li'); // <li></li>
+    li.textContent = task; // <li>task</li>
+
+    // llamo al ul
+    tasksList.appendChild(li); // al ul le agregamos un hijo que es <li> que creamos anteriormente
+  }
 
   //* const addButton =  <button id="addTaskButton">Agregar Tarea</button>;
 });
