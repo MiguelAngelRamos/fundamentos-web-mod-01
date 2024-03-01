@@ -14,7 +14,6 @@ header {
   padding: 1rem;
   justify-content: space-between;
   position: relative; /* Establece una posicion relativa, lo que permite que los elementos posicionados de manera absoluta dentro de el se basen en su posicion*/
-  top: 50px;
   z-index: 5;
 }
 
