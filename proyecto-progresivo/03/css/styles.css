@@ -1,0 +1,49 @@
+body, h1, h2, p, nav, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, p {
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #333;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+nav a::after {
+  content: "|";
+  padding: 0 10px;
+}
+
+nav a:last-child::after {
+  content: none;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Estilos de galería de images */
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
