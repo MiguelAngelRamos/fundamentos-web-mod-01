@@ -52,3 +52,95 @@ main {
   margin: 1rem;
   width: calc(20% - 2rem);
 }
+
+/* Estos son los estilos del formulario */
+#contact-form {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width:100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #b7adadc4;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width: 100%;
+}
+/* Notebook*/
+
+@media (max-width: 1200px) {
+  .galeria img {
+    margin: 1rem;
+    width: calc(25% - 2rem);
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .galeria img {
+    margin: 1rem;
+    width: calc(33.333% - 2rem);
+  }
+}
+
+@media (max-width: 778px) {
+  .galeria img {
+    margin: 1rem;
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .galeria img {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+
+}
+@media (max-width: 369px) {
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  nav a::after {
+    content: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+
+}
