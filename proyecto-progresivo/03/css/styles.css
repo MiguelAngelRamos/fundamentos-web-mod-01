@@ -47,3 +47,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.galeria img {
+  margin: 1rem;
+  width: calc(20% - 2rem);
+}
