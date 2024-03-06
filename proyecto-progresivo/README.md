@@ -1,18 +1,8 @@
 Objetivo de la clase
 
-1.  Migrar de estilos personalizados, al framework bootstrap.
-2.  Aplicar la grilla de bootstrap para diseño adaptable
-3.  Crear un formulario con boostrap 
-4.  Crear la validación del formulario con JavaScript
+1. Crear la validación del formulario con JavaScript
+2. Aprender a implementar Git
+3. Crear cuenta de Usuario en Github
+4. Configurar git en tu entorno local
+5. Aprender los comandos básicos de git
 
-
-
-container
-    row
-      col col col col col col col col col col col col
-    row
-      col col col col col col col col col col col col
-    row
-      col col col col col col col col col col col col
-    row
-      col col col col col col col col col col col col
