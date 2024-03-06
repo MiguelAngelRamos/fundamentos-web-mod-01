@@ -14,16 +14,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const email = document.getElementById('email').value.trim();
     const mensaje = document.getElementById('mensaje').value.trim();
 
-    if(validateLength(nombre, 3)) {
-      // a la parte verdadera
-    } else {
-      // a la parte falsa
+    if(!validateLength(nombre, 3)) {
+      setError('errorNombre', 'El nombre debe tener al menos 3 caracteres');
+    }
+
+    if(!validateEmail(email)) {
+      setError('errorEmail', 'El email no es válido.');
+    }
+
+    if(!validateLength(mensaje, 26)) {
+      setError('errorArea', 'El mensaje debe ser de al menos 26 caracteres');
     }
 
   }
 
   function validateLength(value, minLength) {
-    //* ana, ema y ena
     return value.length >= minLength;
+  }
+
+  function validateEmail(email) {
+    // email es sofiorreo.com
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  }
+
+  function setError(errorId, message) {
+    const errorElement = document.getElementById(errorId);
+    errorElement.textContent = message;
+    errorElement.style.display = 'block';
+
   }
 });
