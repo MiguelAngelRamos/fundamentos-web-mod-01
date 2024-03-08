@@ -48,8 +48,57 @@
     </header>
 
     <main class="site-content container">
-     
+      <h2 class="text-center mb-4">Nuestros destinos</h2>
 
+      <div class="row g-4 text-center">
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=1" title="Destino 1">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=1" alt="Destino 1" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=2" title="Destino 2">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=2" alt="Destino 2" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=3" title="Destino 3">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=3" alt="Destino 3" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=4" title="Destino 4">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=4" alt="Destino 4" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=5" title="Destino 5">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=5" alt="Destino 5" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=6" title="Destino 6">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=6" alt="Destino 6" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=7" title="Destino 7">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=7" alt="Destino 7" >
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a class="fancybox"  data-fancybox="gallery" href="https://picsum.photos/1024/768?random=8" title="Destino 8">
+            <img class="img-fluid rounded" src="https://picsum.photos/200/200?random=8" alt="Destino 8">
+        </div>
+      </div>
     </main>
 
     <footer class="text-center mt-4 bg-body-secondary p-2">
@@ -61,7 +110,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Fancybox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    
+
+
+    <script>
+      $(document).ready(function(){
+        $("a.fancybox").fancybox({
+          transitionIn: 'elastic',
+          transitionOut: 'elastic',
+          speedIn: 600,
+          speedOut: 200,
+          overlayShow: false
+        })
+      })
+    </script>
     <script src="js/validaciones.js"></script>
 
 
